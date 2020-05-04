@@ -1,5 +1,5 @@
 const arrayCompressor = a => a.map(row => {
-    let prev=null, count=0, cc='';
+    let prev=null, count=0;
     let result = row.reduce((acc, v, i) => {
         if(prev && prev != row[i]) {
             acc = acc + count + ',' + prev + ':';
